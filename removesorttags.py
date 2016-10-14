@@ -1,6 +1,6 @@
 PLUGIN_NAME = 'Remove Sort Tags'
 PLUGIN_AUTHOR = 'Alex Palmer'
-PLUGIN_DESCRIPTION = '''Removes ALBUMARTISTSORT, ALBUMSORT, ARTISTSORT, COMPOSERSORT, TITLESORT tags.'''
+PLUGIN_DESCRIPTION = '''Removes albumartistsort, albumsort, artistsort, composersort and titlesort tags.'''
 PLUGIN_VERSION = "1.0"
 PLUGIN_API_VERSIONS = ["0.16"]
 
