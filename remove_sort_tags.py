@@ -8,9 +8,11 @@ TAGS = ['albumartistsort', 'albumsort', 'artistsort', 'composersort', 'titlesort
 
 from picard.metadata import register_track_metadata_processor
 
+
 def remove_sort_tags(tagger, metadata, release, track):
     for tag in TAGS:
         if tag in metadata:
             del metadata[tag]
+
 
 register_track_metadata_processor(remove_sort_tags)

@@ -8,9 +8,11 @@ TAGS = ['artists', 'albumartists']
 
 from picard.metadata import register_track_metadata_processor
 
+
 def remove_artists_tags(tagger, metadata, release, track):
     for tag in TAGS:
         if tag in metadata:
             del metadata[tag]
+
 
 register_track_metadata_processor(remove_artists_tags)
